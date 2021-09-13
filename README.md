@@ -1,1 +1,1 @@
-# motor-adaptation-local-vs-input
+# Small, correlated changes in synaptic connectivity may facilitate rapid motor learning
