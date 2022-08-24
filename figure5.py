@@ -1,5 +1,14 @@
 """
-Look at connectivity change during perturbation experiment.
+Loads simulation data after VR perturbation experiment and plots
+average magnitude and dimensionality of connectivity changes of
+the the different modules.
+
+
+Requirement(s):
+    - run run_initial.py
+    - run run_perturbation with: subname = 'null' (no adaptation)
+    - run run_perturbation with: subname = 'noupstream' (Hlocal)
+    - run run_perturbation with: subname = 'extrainput' (Hinput)
 """
 import numpy as np
 import matplotlib.pyplot as plt

@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Perturbation experiment for initially trained network.
+30 deg VR perturbation experiment to be run with initially trained model.
+
+Requirement(s):
+    - run run_initial.py
 """
 
 import numpy as np

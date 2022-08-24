@@ -1,5 +1,12 @@
 """
-Look at robustness to synaptic noise.
+Loads simulation data after VR perturbation experiment, adds
+noise to learned weight changes, and plots results.
+
+Requirement(s):
+    - run run_initial.py
+    - run run_perturbation with: subname = 'null' (no adaptation)
+    - run run_perturbation with: subname = 'noupstream' (Hlocal)
+    - run run_perturbation with: subname = 'extrainput' (Hinput)
 """
 import numpy as np
 import matplotlib.pyplot as plt

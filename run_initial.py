@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Simulates a two network model (PMd and M1) which creates motor output.
-Weights are learned in order to produce a target motor output.
-
-Training algorithm: BPTT (->PyTorch implementation)
+Simulates a modular RNN model, mimicking motor cortical areas.
+The model is trained to produce planar hand position trajectories.
+The training/testing data comes from real hand trajectories from two monkeys.
+We use pytorch and the Adam optimizer to train the model.
 """
 
 import numpy as np
@@ -57,14 +57,14 @@ n2 = 400 # neuron number M1
 tau = 0.05
 
 # ml params ########################
-batch_size = 2#80
-training_trials = 2#500
+batch_size = 80
+training_trials = 500
 lr = 1e-4
 
 alpha1 = 1e-3 # reg inp & out
-alpha2 = 1e-3#4 # reg ff & fb
-gamma1 = 1e-3#4 # reg rec 1
-gamma2 = 1e-3#4 # reg rec 2
+alpha2 = 1e-3 # reg ff & fb
+gamma1 = 1e-3 # reg rec 1
+gamma2 = 1e-3 # reg rec 2
 
 beta1 = 0.8 # reg rate 1
 beta2 = 0.8 # reg rate 2 

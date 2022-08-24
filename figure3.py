@@ -1,5 +1,8 @@
 """
-Load network data and plot it.
+Loads simulation data after initial training and plots activity traces.
+
+Requirement(s):
+    - run run_initial.py
 """
 import numpy as np
 import matplotlib.pyplot as plt

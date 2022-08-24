@@ -1,5 +1,13 @@
 """
-Load perturbation experiment and plot it.
+Loads simulation data after VR perturbation experiment and plots
+change in activity and covariance of the different RNN modules.
+
+
+Requirement(s):
+    - run run_initial.py
+    - run run_perturbation with: subname = 'null' (no adaptation)
+    - run run_perturbation with: subname = 'noupstream' (Hlocal)
+    - run run_perturbation with: subname = 'extrainput' (Hinput)
 """
 import numpy as np
 import matplotlib.pyplot as plt
